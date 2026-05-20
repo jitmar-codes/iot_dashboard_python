@@ -7,7 +7,7 @@
 	<p>Última actualización: <span id= "fecha"> -- </span></p>
 
 	<script>
-		fetch("datos json")
+		fetch("datos.json")
 			.then(respuesta => respuesta.json())
 			.then(datos => {
 				document.getElementById("temperatura").textContent = datos.temperatura;
